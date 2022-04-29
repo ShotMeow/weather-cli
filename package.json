@@ -1,0 +1,31 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "description": "Weather CLI builded on NodeJS and OpenWeatherAPI",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "man": ["README.md"],
+  "scripts": {
+    "start": "node weather.js"
+  },
+  "keywords": [
+    "weather",
+    "cli",
+    "sky",
+    "rain",
+    "clouds"
+  ],
+  "author": "ShotMeow",
+  "license": "ISC",
+  "homepage": "https://portfolio-app-iota.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShotMeow/weather-cli"
+  },
+  "bugs": {
+    "url": "https://portfolio-app-iota.vercel.app",
+    "email": "shotmeow@gmail.com"
+  }
+}
