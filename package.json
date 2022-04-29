@@ -6,7 +6,9 @@
   "bin": {
     "weather": "weather.js"
   },
-  "man": ["README.md"],
+  "man": [
+    "README.md"
+  ],
   "scripts": {
     "start": "node weather.js"
   },
@@ -27,5 +29,8 @@
   "bugs": {
     "url": "https://portfolio-app-iota.vercel.app",
     "email": "shotmeow@gmail.com"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
   }
 }
