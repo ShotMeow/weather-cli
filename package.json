@@ -6,6 +6,7 @@
   "bin": {
     "weather": "weather.js"
   },
+  "type": "module",
   "man": [
     "README.md"
   ],
