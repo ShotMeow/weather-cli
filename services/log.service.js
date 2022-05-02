@@ -16,11 +16,11 @@ export const printHelp = () => {
 
         ${chalk.black.bgYellow.italic(' Без параметров ')} = вывод погоды
 
-        ${chalk.black.bgYellow.italic('-s [CITY] ')} = выбор города
+        ${chalk.black.bgYellow.italic(' -s [CITY] ')} = выбор города
 
-        ${chalk.black.bgYellow.italic('-h ')} = вывод помощи
+        ${chalk.black.bgYellow.italic(' -h ')} = вывод помощи
 
-        ${chalk.black.bgYellow.italic('-t [API_KEY] ')} = сохранение токена
+        ${chalk.black.bgYellow.italic(' -t [API_KEY] ')} = сохранение токена
 
     `))
 }
