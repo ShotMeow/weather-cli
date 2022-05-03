@@ -51,7 +51,9 @@ export const getWeather = async city => {
         params: {
             lat: lat,
             lon: lon,
-            appid: token
+            appid: token,
+            units: 'metric',
+            lang: 'ru'
         }
     })
     return data

@@ -6,11 +6,8 @@ import { printError, printHelp, printSuccess, printWeather } from "./services/lo
 import { getKeyValue, saveKeyValue, TOKEN_DICTIONARY } from "./services/storage.service.js"
 
 const saveToken = async token => {
-    if (!token.length) {
-        printError('Токен не передан')
-        return
-    }
-
+    if (!token.length)
+        return printError('Токен не передан')
     try {
         await saveKeyValue(TOKEN_DICTIONARY.token, token)
         printSuccess('Токен сохранен')
@@ -20,11 +17,8 @@ const saveToken = async token => {
 }
 
 const saveCity = async city => {
-    if (!city.length) {
-        printError('Город не передан')
-        return
-    }
-
+    if (!city.length)
+        return printError('Город не передан')
     try {
         await saveKeyValue(TOKEN_DICTIONARY.city, city)
         printSuccess('Город сохранен')
@@ -49,15 +43,14 @@ const getForcast = async () => {
 
 const initCLI = () => {
     const args = getArgs(process.argv)
-    if (args.h) {
+    if (args.h)
         printHelp()
-    } else if (args.s) {
+    else if (args.s)
         return saveCity(args.s)
-    } else if (args.t) {
+    else if (args.t)
         return saveToken(args.t)
-    } else {
+    else
         getForcast()
-    }
 }
 
 initCLI()

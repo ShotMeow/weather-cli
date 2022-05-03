@@ -27,11 +27,14 @@ export const printHelp = () => {
 
 export const printWeather = (res, icon) => {
     console.log(dedent(`
+
         ${chalk.bgGreenBright(' ПОГОДА ')} Погода в городе ${res.name}
+        
         ${icon}  ${res.weather[0].description}
         Температура: ${res.main.temp} (ощущается как ${res.main.feels_like})
         Влажность: ${res.main.humidity}%
         Скорость ветра: ${res.wind.speed}
+
     `)
     )
 }
